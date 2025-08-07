@@ -1,39 +1,66 @@
--- Obfuscated by Manus
-local _v = string.char;
-local _t = table.concat;
-local _l = loadstring;
-local _g = game;
-local _s = _g:HttpGet;
-
-local function _c(t) return _v(unpack(t)) end;
-
-local d1 = {108, 111, 97, 100, 115, 116, 114, 105, 110, 103};
-local d2 = {104, 116, 116, 112, 115, 58, 47, 47, 114, 97, 119, 46, 103, 105, 116, 104, 117, 98, 117, 115, 101, 114, 99, 111, 110, 116, 101, 110, 116, 46, 99, 111, 109, 47, 106, 101, 110, 115, 111, 110, 104, 105, 114, 115, 116, 47, 79, 114, 105, 111, 110, 47, 109, 97, 105, 110, 47, 115, 111, 117, 114, 99, 101};
-local v1 = _l(_g:_s(_c(d2)))();
-local v2 = _g:GetService(_c({84, 101, 108, 101, 112, 111, 114, 116, 83, 101, 114, 118, 105, 99, 101}));
-local v3 = _g:GetService(_c({80, 108, 97, 121, 101, 114, 115}));
-local v4 = v3.LocalPlayer;
-local v5 = v1:MakeWindow({Name = _c({216, 179, 217, 139, 216, 178, 216, 185, 216, 16a, 216, 177, 32, 216, 180, 216, 167, 217, 132, 217, 134, 216, 168, 32, 216, 178, 217, 136, 216, 168}), HidePremium = true, SaveConfig = true, ConfigFolder = _c({79, 114, 105, 111, 110, 84, 101, 115, 116})});
-local v6 = v5:MakeTab({Name = _c({216, 167, 217, 132, 217, 134, 216, 167, 216, 185, 217, 133, 216, 169, 216, 177, 216, 170, 216, 169, 216, 185, 216, 177, 217, 138, 216, 169}), Icon = _c({114, 98, 120, 97, 115, 115, 101, 116, 105, 100, 58, 47, 47, 52, 52, 56, 51, 51, 52, 53, 57, 57, 56}), PremiumOnly = false});
-v6:AddSection({Name = _c({216, 182, 217, 138, 216, 167, 216, 178, 216, 167, 216, 170, 32, 216, 185, 216, 167, 217, 133, 216, 169})});
-v6:AddButton({Name = _c({216, 167, 217, 132, 216, 179, 216, 182, 32, 216, 173, 216, 179, 216, 167, 216, 168, 217, 138, 32, 216, 167, 217, 132, 216, 170, 217, 138, 217, 139, 32, 217, 139, 217, 133, 217, 139}), Callback = function() setclipboard(_c({64, 216, 167, 216, 179, 217, 133, 95, 216, 173, 216, 179, 216, 167, 216, 168, 217, 139})) end});
-v6:AddLabel(_c({216, 185, 216, 180, 216, 180, 32, 216, 167, 217, 132, 217, 134, 216, 185, 216, 168, 217, 136, 217, 139, 32, 217, 131, 217, 138, 32, 216, 167, 217, 132, 216, 179, 217, 138, 216, 171, 216, 178, 58, 32}) .. tostring(#v3:GetPlayers()));
-v6:AddButton({Name = _c({216, 167, 217, 132, 216, 179, 216, 182, 32, 216, 178, 217, 133, 217, 133, 32, 216, 167, 217, 132, 216, 179, 217, 138, 216, 171, 216, 178}), Callback = function() setclipboard(tostring(_g.JobId)) end});
-v6:AddTextbox({Name = _c({216, 167, 216, 180, 216, 182, 217, 132, 32, 216, 178, 217, 133, 217, 133, 32, 216, 167, 217, 132, 216, 179, 217, 138, 216, 171, 216, 178}), Default = "", TextDisappear = true, Callback = function(i) local p = _g.PlaceId; local j = i; if j and j ~= "" then v2:TeleportToPlaceInstance(p, j, v4) end end});
-v6:AddSection({Name = _c({216, 163, 216, 181, 217, 138, 216, 167, 216, 161, 32, 216, 170, 216, 168, 217, 138, 32, 216, 170, 217, 131, 217, 138, 216, 180, 217, 139})});
-v6:AddSection({Name = _c({216, 179, 217, 139, 216, 178, 216, 185, 216, 170, 216, 167, 216, 170, 32, 216, 178, 216, 167, 216, 173, 32, 216, 170, 217, 131, 217, 138, 216, 180, 217, 139, 32, 216, 185, 216, 180, 217, 133, 217, 139})});
-v6:AddButton({Name = _c({216, 170, 216, 181, 216, 174, 217, 138, 217, 132, 32, 216, 179, 217, 139, 216, 178, 216, 185, 216, 170, 32, 216, 167, 217, 132, 217, 133, 217, 138, 216, 178, 216, 167, 217, 132}), Callback = function() _l(_g:_s(_c({104, 116, 116, 112, 115, 58, 47, 47, 114, 97, 119, 115, 99, 114, 105, 112, 116, 115, 46, 110, 101, 116, 47, 114, 97, 119, 47, 85, 110, 105, 118, 101, 114, 115, 97, 108, 45, 83, 99, 114, 105, 112, 116, 45, 70, 108, 121, 45, 118, 51, 45, 52, 50, 51, 49, 55})))() end});
-v6:AddButton({Name = _c({216, 167, 217, 132, 216, 179, 216, 182, 32, 216, 185, 217, 133, 217, 132, 216, 169, 32, 217, 133, 216, 170, 217, 139, 216, 178, 216, 178, 216, 177}), Callback = function() setclipboard(_c({240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191, 240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191, 240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191, 240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191, 240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191, 240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191, 240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191, 240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191, 240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191, 240, 159, 135, 166, 32, 58, 216, 185, 217, 133, 226, 128, 139, 32, 226, 128, 139, 217, 132, 216, 169, 63, 194, 191})) end});
-v6:AddToggle({Name = _c({217, 133, 216, 167, 217, 132, 216, 185, 32, 216, 167, 217, 132, 217, 132, 217, 132, 32, 217, 133, 217, 139, 32, 216, 167, 217, 132, 217, 139, 217, 132, 216, 168, 216, 181, 216, 169}), Default = false, Callback = function(s) if s then _G.AntiCuffKill = true; local r = v4.Character:WaitForChild(_c({72, 117, 109, 97, 110, 111, 105, 100, 82, 111, 111, 116, 80, 97, 114, 116})); local p = r.Position; task.spawn(function() while _G.AntiCuffKill do pcall(function() local y = r.Position.Y; if y < -10 then r.CFrame = CFrame.new(p) end end); task.wait(0.3) end end) else _G.AntiCuffKill = false end end});
-v6:AddSection({Name = _c({216, 167, 216, 180, 217, 133, 217, 139, 32, 47, 105, 110, 102, 116, 105, 116, 101, 32, 89, 108, 105})});
-v6:AddButton({Name = _c({216, 167, 217, 132, 216, 167, 216, 180, 217, 133, 217, 139, 32, 216, 167, 217, 132, 216, 163, 217, 136, 217, 132}), Callback = function() _l(_g:_s(_c({104, 116, 116, 112, 115, 58, 47, 47, 114, 97, 119, 46, 103, 105, 116, 104, 117, 98, 117, 115, 101, 114, 99, 111, 110, 116, 101, 110, 116, 46, 99, 111, 109, 47, 69, 100, 103, 101, 73, 89, 47, 105, 110, 102, 105, 110, 105, 116, 101, 121, 105, 101, 108, 100, 47, 109, 97, 115, 116, 101, 114, 47, 115, 111, 117, 114, 99, 101})))() end});
-local v7 = v3; local v8 = v7.LocalPlayer; local v9 = v8.Character or v8.CharacterAdded:Wait(); local v10 = v9:WaitForChild(_c({72, 117, 109, 97, 110, 111, 105, 100, 82, 111, 111, 116, 80, 97, 114, 116}));
-local v11 = v5:MakeTab({Name = _c({216, 179, 217, 139, 216, 178, 216, 185, 216, 170, 216, 167, 216, 170, 32, 217, 136, 32, 216, 167, 217, 132, 216, 163, 217, 136, 216, 167, 217, 133, 216, 178}), Icon = _c({114, 98, 120, 97, 115, 115, 101, 116, 105, 100, 58, 47, 47, 52, 52, 56, 51, 51, 52, 53, 57, 57, 56}), PremiumOnly = false});
-v11:AddSection({Name = _c({216, 167, 217, 132, 216, 170, 217, 132, 217, 133, 217, 132, 32})});
-v11:AddButton({Name = _c({216, 167, 217, 132, 216, 167, 217, 132, 216, 170, 217, 133, 216, 167, 217, 132, 32, 216, 165, 217, 132, 217, 133, 32, 216, 167, 217, 132, 217, 133, 216, 179, 216, 168, 216, 173}), Callback = function() v10.CFrame = CFrame.new(1196.4, 25.9, 492.5) end});
-v11:AddButton({Name = _c({216, 167, 217, 132, 216, 167, 217, 132, 216, 170, 217, 133, 216, 167, 217, 132, 32, 216, 165, 217, 132, 217, 133, 32, 216, 167, 217, 132, 216, 168, 217, 138, 217, 139}), Callback = function() v10.CFrame = CFrame.new(1779.8, 21.4, 602.1) end});
-v11:AddButton({Name = _c({216, 167, 217, 132, 216, 167, 217, 132, 216, 170, 217, 133, 216, 167, 217, 132, 32, 216, 165, 217, 132, 217, 133, 32, 216, 167, 217, 132, 217, 133, 216, 179, 216, 178, 216, 173}), Callback = function() v10.CFrame = CFrame.new(1870.7, 28.7, 68.0) end});
-v11:AddSection({Name = _c({217, 133, 217, 136, 216, 167, 217, 132, 216, 185})});
-v11:AddButton({Name = _c({217, 133, 216, 180, 216, 167, 216, 180, 32, 98, 97, 110, 103}), Callback = function() local p = v4; local c = p.Character or p.CharacterAdded:Wait(); local r = c:WaitForChild(_c({72, 117, 109, 97, 110, 111, 105, 100, 82, 111, 111, 116, 80, 97, 114, 116})); local o = r.Position; c:PivotTo(CFrame.new(0, -200, 0)); task.wait(0.5); c:PivotTo(CFrame.new(o + Vector3.new(0, 5, 0))) end});
-v11:AddToggle({Name = _c({217, 133, 216, 180, 216, 167, 216, 180, 32, 216, 167, 217, 132, 217, 139, 217, 132, 216, 168, 216, 181, 216, 169, 32, 40, 216, 170, 217, 132, 217, 133, 216, 167, 216, 166, 217, 138, 216, 167, 32, 217, 139, 217, 132, 32, 51, 32, 216, 171, 217, 136, 216, 167, 217, 132, 217, 138, 41}), Default = false, Callback = function(s) local p = v4; local n = p.Name; if s then _g.StarterGui:SetCore(_c({83, 101, 110, 100, 78, 111, 116, 105, 102, 105, 99, 97, 116, 105, 111, 110}), {Title = "", Text = _c({217, 133, 217, 132, 216, 167, 216, 173, 216, 180, 216, 177, 58, 32, 217, 135, 216, 170, 216, 167, 32, 216, 167, 217, 132, 216, 182, 217, 138, 216, 167, 216, 178, 32, 217, 133, 216, 180, 32, 217, 138, 216, 174, 217, 138, 216, 178, 32, 216, 167, 216, 179, 217, 139, 217, 132, 217, 139, 194, 144, 32, 216, 167, 217, 132, 216, 170, 216, 168, 216, 169, 33}), Duration = 5}); _G.AntiArrestLoop = true; task.spawn(function() while _G.AntiArrestLoop do _g:GetService(_c({82, 101, 112, 108, 105, 99, 97, 116, 101, 100, 83, 116, 111, 114, 97, 103, 101})).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(_c({47, 99, 104, 97, 114, 32, 109, 101, 32}) .. n, _c({65, 108, 108})); task.wait(3) end end) else _G.AntiArrestLoop = false end end});
-
+--[[ Obfuscated by Manus - Safe Version ]]
+local l_1_0, l_1_1, l_1_2, l_1_3, l_1_4, l_1_5, l_1_6 = loadstring, game, string.char, table.concat, pcall, task.wait, setclipboard;
+local l_1_7 = l_1_1:GetService("TeleportService");
+local l_1_8 = l_1_1:GetService("Players");
+local l_1_9 = l_1_8.LocalPlayer;
+local l_1_10 = l_1_0(l_1_1:HttpGet('https://raw.githubusercontent.com/jensonhirst/Orion/main/source'))();
+local l_1_11 = {
+	["N1"] = "سكربت شاليه روب",
+	["N2"] = "OrionTest",
+	["N3"] = "القائمة الرئيسية",
+	["I1"] = "rbxassetid://4483345998",
+	["S1"] = "خيارات عامة",
+	["B1"] = "انسخ حسابي التيك توك",
+	["C1"] = "@اسم_حسابك",
+	["L1"] = "عدد اللاعبين في السيرفر: ",
+	["B2"] = "انسخ رقم السيرفر",
+	["T1"] = "ادخل رقم السيرفر",
+	["S2"] = "أشياء تبي تفيدك",
+	["S3"] = "سكربتات راح تفيدك صدقني",
+	["B3"] = "تشغيل سكربت الطيران",
+	["U1"] = "https://rawscripts.net/raw/Universal-Script-Fly-v3-42317",
+	["B4"] = "انسخ صمله متكررة",
+	["C2"] = "🇦🇱 :صمـ ـله?¿🇦🇱 :صمـ ـله?¿🇦🇱 :صمـ ـله?¿🇦🇱 :صمـ ـله?¿🇦🇱 :صمـ ـله?¿🇦🇱 :صمـ ـله?¿🇦🇱 :صمـ ـله?¿🇦🇱 :صمـ ـله?¿🇦🇱 :صمـ ـله?¿🇦🇱 :صمـ ـله?¿",
+	["T2"] = "مانع القتل من الكلبشه",
+	["HRP"] = "HumanoidRootPart",
+	["S4"] = "ادمن /inftite Yli",
+	["B5"] = "الادمن الأول",
+	["U2"] = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",
+	["T3"] = "سكربتات و الأوامر",
+	["S5"] = "التنقل ",
+	["B6"] = "الانتقال إلى المسبح",
+	["B7"] = "الانتقال إلى البيك",
+	["B8"] = "الانتقال إلى المسرح",
+	["S6"] = "موانع",
+	["B9"] = "مضاد bang",
+	["T4"] = "مضاد الكلبشه (تلقائي كل 3 ثواني)",
+	["SN"] = "SendNotification",
+	["NT"] = "ملاحظة: هذا الخيار قد يغير اسكنك، انتبه!",
+	["RS"] = "ReplicatedStorage",
+	["CMD"] = "/char me ",
+	["ALL"] = "All"
+};
+local l_1_12 = l_1_10:MakeWindow({Name = l_1_11["N1"], HidePremium = true, SaveConfig = true, ConfigFolder = l_1_11["N2"]});
+local l_1_13 = l_1_12:MakeTab({Name = l_1_11["N3"], Icon = l_1_11["I1"], PremiumOnly = false});
+l_1_13:AddSection({Name = l_1_11["S1"]});
+l_1_13:AddButton({Name = l_1_11["B1"], Callback = function() l_1_6(l_1_11["C1"]) end});
+l_1_13:AddLabel(l_1_11["L1"] .. tostring(#l_1_8:GetPlayers()));
+l_1_13:AddButton({Name = l_1_11["B2"], Callback = function() l_1_6(tostring(l_1_1.JobId)) end});
+l_1_13:AddTextbox({Name = l_1_11["T1"], Default = "", TextDisappear = true, Callback = function(p_1) local p_2 = l_1_1.PlaceId; local p_3 = p_1; if p_3 and p_3 ~= "" then l_1_7:TeleportToPlaceInstance(p_2, p_3, l_1_9) end end});
+l_1_13:AddSection({Name = l_1_11["S2"]});
+l_1_13:AddSection({Name = l_1_11["S3"]});
+l_1_13:AddButton({Name = l_1_11["B3"], Callback = function() l_1_0(l_1_1:HttpGet(l_1_11["U1"]))() end});
+l_1_13:AddButton({Name = l_1_11["B4"], Callback = function() l_1_6(l_1_11["C2"]) end});
+l_1_13:AddToggle({Name = l_1_11["T2"], Default = false, Callback = function(p_4) if p_4 then _G.AntiCuffKill = true; local p_5 = l_1_9.Character:WaitForChild(l_1_11["HRP"]); local p_6 = p_5.Position; task.spawn(function() while _G.AntiCuffKill do l_1_4(function() local p_7 = p_5.Position.Y; if p_7 < -10 then p_5.CFrame = CFrame.new(p_6) end end); l_1_5(0.3) end end) else _G.AntiCuffKill = false end end});
+l_1_13:AddSection({Name = l_1_11["S4"]});
+l_1_13:AddButton({Name = l_1_11["B5"], Callback = function() l_1_0(l_1_1:HttpGet(l_1_11["U2"]))() end});
+local l_1_14 = l_1_9.Character or l_1_9.CharacterAdded:Wait();
+local l_1_15 = l_1_14:WaitForChild(l_1_11["HRP"]);
+local l_1_16 = l_1_12:MakeTab({Name = l_1_11["T3"], Icon = l_1_11["I1"], PremiumOnly = false});
+l_1_16:AddSection({Name = l_1_11["S5"]});
+l_1_16:AddButton({Name = l_1_11["B6"], Callback = function() l_1_15.CFrame = CFrame.new(1196.4, 25.9, 492.5) end});
+l_1_16:AddButton({Name = l_1_11["B7"], Callback = function() l_1_15.CFrame = CFrame.new(1779.8, 21.4, 602.1) end});
+l_1_16:AddButton({Name = l_1_11["B8"], Callback = function() l_1_15.CFrame = CFrame.new(1870.7, 28.7, 68.0) end});
+l_1_16:AddSection({Name = l_1_11["S6"]});
+l_1_16:AddButton({Name = l_1_11["B9"], Callback = function() local p_8 = l_1_9.Character or l_1_9.CharacterAdded:Wait(); local p_9 = p_8:WaitForChild(l_1_11["HRP"]); local p_10 = p_9.Position; p_8:PivotTo(CFrame.new(0, -200, 0)); l_1_5(0.5); p_8:PivotTo(CFrame.new(p_10 + Vector3.new(0, 5, 0))) end});
+l_1_16:AddToggle({Name = l_1_11["T4"], Default = false, Callback = function(p_11) local p_12 = l_1_9.Name; if p_11 then l_1_1.StarterGui:SetCore(l_1_11["SN"], {Title = "", Text = l_1_11["NT"], Duration = 5}); _G.AntiArrestLoop = true; task.spawn(function() while _G.AntiArrestLoop do l_1_1:GetService(l_1_11["RS"]).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(l_1_11["CMD"] .. p_12, l_1_11["ALL"]); l_1_5(3) end end) else _G.AntiArrestLoop = false end end});
